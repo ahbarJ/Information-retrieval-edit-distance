@@ -32,7 +32,7 @@ Each algorithm is implemented in a separate file with example usage provided in 
 
 ## Contributions
 
-Contributions are welcome! If you have an implementation of an edit distance algorithm not covered here or improvements to the existing code, feel free to submit a pull request. For more projects and updates, visit [Sara Khosrozadeh's GitHub page](https://github.com/sarakhosrozadeh).
+Contributions are welcome! If you have an implementation of an edit distance algorithm not covered here or improvements to the existing code, feel free to submit a pull request. 
 
 
 ---
