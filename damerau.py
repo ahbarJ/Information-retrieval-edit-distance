@@ -27,9 +27,6 @@ def damerau_levenshtein_distance(str1, str2):
     # The bottom-right cell contains the Damerau-Levenshtein distance
     return dp[m][n]
 
-# Example usage:
-string1 = "saturday"
-string2 = "sunday"
-
-result = damerau_levenshtein_distance(string1, string2)
-print(f"The Damerau-Levenshtein distance between '{string1}' and '{string2}' is: {result}")
+def distance (word1, word2):
+    res = damerau_levenshtein_distance(word1, word2)
+    return res
