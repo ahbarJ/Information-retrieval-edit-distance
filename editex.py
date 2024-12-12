@@ -22,9 +22,5 @@ def editex_distance(s1, s2, substitution_cost=1, transposition_cost=1):
 
     return dp[m][n]
 
-# Example usage
-word1 = "kitten"
-word2 = "sitting"
-
-distance = editex_distance(word1, word2)
-print(f"Editex Distance between '{word1}' and '{word2}': {distance}")
+def distance (word1, word2):
+    return editex_distance(word1, word2)
