@@ -1,4 +1,4 @@
-def smith_waterman(sequence1, sequence2, match_score=2, mismatch_score=-1, gap_penalty=-1):
+def distance(sequence1, sequence2, match_score=2, mismatch_score=-1, gap_penalty=-1):
     # Initialize the scoring matrix with zeros
     matrix = [[0] * (len(sequence2) + 1) for _ in range(len(sequence1) + 1)]
 
