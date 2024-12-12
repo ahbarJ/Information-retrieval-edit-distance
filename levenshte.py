@@ -23,10 +23,6 @@ def levenshtein_distance(str1, str2):
     # The bottom-right cell contains the Levenshtein distance
     return dp[m][n]
 
-# Example usage:
-string1 = "kitten"
-string2 = "sitting"
-
-result = levenshtein_distance(string1, string2)
-print(f"The Levenshtein distance between '{string1}' and '{string2}' is: {result}")
+def distance (word1, word2):
+    return levenshtein_distance(word1, word2)
 
