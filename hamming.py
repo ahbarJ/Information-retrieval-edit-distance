@@ -7,9 +7,5 @@ def hamming_distance(str1, str2):
     distance = sum(c1 != c2 for c1, c2 in zip(str1, str2))
     return distance
 
-# Example usage:
-string1 = "karate"
-string2 = "karuse"
-
-result = hamming_distance(string1, string2)
-print(f"The Hamming distance between '{string1}' and '{string2}' is: {result}")
+def distance (word1, word2):
+    return hamming_distance(word1, word2)
