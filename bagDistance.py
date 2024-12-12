@@ -112,7 +112,8 @@ class BagDistance(SequenceSimilarityMeasure):
 
 
 
-bd = BagDistance()
-bd.get_raw_score('Niall', 'Neil')
+def distance (word1, word2):
+  bd = BagDistance()
+  return bd.get_raw_score(word1, word2)
 
 
