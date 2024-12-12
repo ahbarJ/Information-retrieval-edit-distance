@@ -6,9 +6,5 @@ def lcs(X, Y, m, n):
     else:
         return max(lcs(X, Y, m, n-1), lcs(X, Y, m-1, n))
  
- 
-# Driver code
-if __name__ == '__main__':
-    S1 = "AGGTAB"
-    S2 = "GXTXAYB"
-    print("Length of LCS is", lcs(S1, S2, len(S1), len(S2)))
+def distance (word1, word2):
+    return lcs(word1, word2, len(word1), len(word2))
