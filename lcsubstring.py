@@ -19,15 +19,5 @@ def LCSubStr(X, Y, m, n):
 				LCSuff[i][j] = 0
 	return result
 
-
-# Driver Code
-X = 'GeeksforGeeks'
-Y = 'GeeksQuiz'
-
-m = len(X)
-n = len(Y)
-
-print('Length of Longest Common Substring is',
-	LCSubStr(X, Y, m, n))
-
-
+def distance (word1, word2):
+	return LCSubStr(word1, word2, len(word1), len(word2))
