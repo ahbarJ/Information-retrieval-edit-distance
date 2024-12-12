@@ -1,4 +1,4 @@
-import nltk
+# import nltk """  Assuming the code has already imported this module """
 nltk.download("cmudict")
 def get_syllables(word):
     syllables = []
@@ -18,11 +18,5 @@ def align_syllables(word1, word2):
 
     return alignment
 
-# Example usage:
-word1 = "water"
-word2 = "waiter"
-alignment_result = align_syllables(word1, word2)
-
-print(f"Syllable alignment between '{word1}' and '{word2}':")
-for pair in alignment_result:
-    print(f"{pair[0]:<10} {pair[1]:<10}")
+def distance (word1, word2):
+    return len(align_syllables(word1, word2)) # changed the return value from a list to the number of elements in that list
