@@ -8,9 +8,5 @@ def overlap_coefficient(set1, set2):
     coefficient = common_elements / total_unique_elements
     return coefficient
 
-# Example usage:
-set1 = {"apple", "orange", "banana"}
-set2 = {"orange", "banana", "grape"}
-
-result = overlap_coefficient(set1, set2)
-print(f"Overlap coefficient between Set 1 and Set 2: {result}")
+def distance (top10, rest):
+    return overlap_coefficient(top10, rest)
