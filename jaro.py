@@ -61,10 +61,5 @@ def jaro_distance(s1, s2):
 	return (match/ len1 + match / len2 +
 			(match - t) / match)/ 3.0
 
-# Driver code
-s1 = "martha"
-s2 = "marhta"
-
-# Prjaro Similarity of two s
-print(1-round(jaro_distance(s1, s2),6))
-
+def distance (word1, word2):
+	return 1 - round(jaro_distance(word1, word2), 6)
