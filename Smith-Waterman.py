@@ -1,4 +1,4 @@
-def distance(sequence1, sequence2, match_score=2, mismatch_score=-1, gap_penalty=-1):
+def smith_waterman(sequence1, sequence2, match_score=2, mismatch_score=-1, gap_penalty=-1):
     # Initialize the scoring matrix with zeros
     matrix = [[0] * (len(sequence2) + 1) for _ in range(len(sequence1) + 1)]
 
@@ -44,10 +44,8 @@ def distance(sequence1, sequence2, match_score=2, mismatch_score=-1, gap_penalty
 
     return alignment1, alignment2
 
-# Example usage
-sequence1 = "AGCACACA"
-sequence2 = "ACACACTA"
 
-alignment1, alignment2 = smith_waterman(sequence1, sequence2)
-print("Sequence 1:", alignment1)
-print("Sequence 2:", alignment2)
+def distance(word1, word2):
+    align1, align2 = smith_waterman(word1, word2)
+    res = "{}: {} \t {}: {}".format(word1, align1, word2, align2)
+    return res
