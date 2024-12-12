@@ -35,7 +35,5 @@ def jaro_winkler_similarity(s1, s2, p=0.1):
     jaro_winkler_sim = jaro_sim + (common_prefix_len * p * (1 - jaro_sim))
     return jaro_winkler_sim
 
-string1 = "apple"
-string2 = "applet"
-jw_similarity = jaro_winkler_similarity(string1, string2)
-print("Jaro-Winkler Distance:", 1-jw_similarity)
+def distance (word1, word2):
+    return 1 - jaro_winkler_similarity(word1, word2)
