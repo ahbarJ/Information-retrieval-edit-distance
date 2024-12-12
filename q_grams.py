@@ -13,9 +13,5 @@ def find_common_qgrams(string1, string2, q):
     
     return common_qgrams
 
-# Example usage:
-string1 = "example"
-string2 = "ample"
-q = 2
-result = find_common_qgrams(string1, string2, q)
-print(f"Common {q}-grams between '{string1}' and '{string2}': {result}")
+def distance (word1, word2):
+    return len(find_common_qgrams(word1, word2, 2)) # changed the return value from a 'set' to the 'number of the elements in the set' (default: 2-grams)
