@@ -47,5 +47,5 @@ def smith_waterman(sequence1, sequence2, match_score=2, mismatch_score=-1, gap_p
 
 def distance(word1, word2):
     align1, align2 = smith_waterman(word1, word2)
-    res = "{word1}: {align1} \t {word2}: {align2}"
+    res = f"{word1}: {align1} \t {word2}: {align2}"
     return res
