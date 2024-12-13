@@ -11,4 +11,4 @@ def lcs(X, Y):
 
  
 def distance (word1, word2):
-    return lcs(word1, word2, len(word1), len(word2))
+    return lcs(word1, word2)
