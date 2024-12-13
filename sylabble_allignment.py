@@ -1,5 +1,4 @@
-# import nltk """  Assuming the code has already imported this module """
-nltk.download("cmudict")
+
 def get_syllables(word):
     syllables = []
     phones = nltk.corpus.cmudict.dict().get(word.lower())
