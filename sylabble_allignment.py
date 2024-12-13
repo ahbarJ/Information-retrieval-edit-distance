@@ -1,3 +1,4 @@
+import nltk 
 
 def get_syllables(word):
     syllables = []
